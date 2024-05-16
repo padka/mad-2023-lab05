@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application 5</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="question">Question</string>
+    <string name="hint">Hint</string>
+    <string name="answer">Answer</string>
+    <string name="translation">Translation</string>
+    <string name="enter_question">Enter question</string>
+    <string name="enter_hint">Enter hint</string>
+    <string name="enter_answer">Enter answer</string>
+    <string name="enter_translation">Enter translation</string>
+    <string name="confirm_delete">Are you sure you want to delete this card?</string>
+    <string name="confirm_edit">Are you sure you want to edit this card?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="add">Add</string>
+    <string name="select_image">Select Image</string>
+    <string name="selected_image">Selected Image</string>
+    <string name="card_description">Description</string>
+</resources>

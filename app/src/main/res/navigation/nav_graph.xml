@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/cardsListFragment">
+
+    <fragment
+        android:id="@+id/cardsListFragment"
+        android:name="com.example.myapplication5.CardsListFragment"
+        tools:layout="@layout/fragment_cards_list">
+        <action
+            android:id="@+id/action_cardsListFragment_to_editCardFragment"
+            app:destination="@id/editCardFragment" />
+        <action
+            android:id="@+id/action_cardsListFragment_to_viewCardFragment"
+            app:destination="@id/viewCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewCardFragment"
+        android:name="com.example.myapplication5.ViewCardFragment"
+        tools:layout="@layout/fragment_view_card">
+        <argument
+            android:name="card"
+            app:argType="com.example.myapplication5.Card" />
+        <action
+            android:id="@+id/action_viewCardFragment_to_editCardFragment"
+            app:destination="@id/editCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editCardFragment"
+        android:name="com.example.myapplication5.EditCardFragment"
+        tools:layout="@layout/fragment_edit_card">
+        <argument
+            android:name="card"
+            app:argType="com.example.myapplication5.Card" />
+        <action
+            android:id="@+id/action_editCardFragment_to_cardsListFragment"
+            app:destination="@id/cardsListFragment" />
+    </fragment>
+</navigation>
